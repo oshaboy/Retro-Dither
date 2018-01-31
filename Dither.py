@@ -1478,7 +1478,7 @@ def main():
     filename = "kirigiri"
     filetype = ".jpg"
     input_file = folder + "\\" + filename + filetype
-    for palette in ["rebecca_1_bit"]:#paletteDict.keys():
+    for palette in paletteDict.keys():
         output_file = folder + "\\" + filename + "(" + palette + ").bmp"
         Dither(input_file, output=output_file, palette=paletteDict[palette])
         print(output_file)
